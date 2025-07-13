@@ -23,6 +23,20 @@ TOTP_SECRET = "IWXYJI7S26EUXGNWB4OCNHUQ7A"
 TELEGRAM_TOKEN = "7632650061:AAFWRVJuIKCOwsuzio9j3HVDp5xWq4ki4gA"
 TELEGRAM_CHAT_ID = "6712530011"
 
+
+
+# --- Credentials from environment ---
+API_KEY = os.environ.get("SMARTAPI_API_KEY")
+CLIENT_CODE = os.environ.get("SMARTAPI_CLIENT_CODE")
+MPIN = os.environ.get("SMARTAPI_PASSWORD")
+TOTP_SECRET = os.environ.get("SMARTAPI_TOTP_SECRET")
+
+# --- Telegram from environment ---
+TELEGRAM_TOKEN = os.environ.get("TELEGRAM_TOKEN")
+TELEGRAM_CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID")
+
+
+
 # --- Send Telegram Message ---
 def send_telegram_message(message):
     url = f"https://api.telegram.org/bot{TELEGRAM_TOKEN}/sendMessage"
