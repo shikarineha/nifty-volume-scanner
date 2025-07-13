@@ -1,1 +1,47 @@
-env/ 
+# === Python ===
+*.pyc
+*.pyo
+__pycache__/
+*.pyd
+*.so
+
+# === Virtual Environment ===
+env/
+.venv/
+ENV/
+env.bak/
+venv/
+
+# === Jupyter Notebook Checkpoints ===
+.ipynb_checkpoints
+
+# === Logs and Output Files ===
+*.log
+*.out
+*.xlsx
+*.csv
+*.xls
+
+# === IDE Files ===
+.vscode/
+.idea/
+
+# === OS Files ===
+.DS_Store
+Thumbs.db
+
+# === Credentials and Secrets ===
+credentials.json
+token.json
+*.key
+*.pem
+*.pfx
+.env
+
+# === Git Filter-Repo Backup ===
+.git-filter-repo/
+
+# === Build ===
+build/
+dist/
+*.egg-info/
